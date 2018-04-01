@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Judy Drap</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+	<!-- jQuery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<!-- FlexSlider -->
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		var $ = jQuery.noConflict();
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "fade"
+			});
+
+			$(function () {
+				$('.show_menu').click(function () {
+					$('.menu').fadeIn();
+					$('.show_menu').fadeOut();
+					$('.hide_menu').fadeIn();
+				});
+				$('.hide_menu').click(function () {
+					$('.menu').fadeOut();
+					$('.show_menu').fadeIn();
+					$('.hide_menu').fadeOut();
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header-left">
+			<h1>Judy Drap </h1>
+			<h3>Chăn ga gối một màu</h3>
+		</div>
+		<div class="header-right">
+			<a href='https://www.facebook.com/judybedsheets' target="_blank">facebook.com/judybedsheets</a>
+			<br>
+			<a href="tel:0935771089">0935 77 10 89</a>
+		</div>
+
+	</div>
+	<div class="container">
+		<div class="slider_container">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="images/slider/slider1.jpg" alt="" title="" />
+					</li>
+					<li>
+						<img src="images/slider/slider2.jpg" alt="" title="" />
+					</li>
+					<li>
+						<img src="images/slider/slider3.jpg" alt="" title="" />
+					</li>
+					<li>
+						<img src="images/slider/slider4.jpg" alt="" title="" />
+					</li>
+					<li>
+						<img src="images/slider/slider5.jpg" alt="" title="" />
+					</li>
+					<li>
+						<img src="images/slider/slider6.jpg" alt="" title="" />
+					</li>
+					<li>
+						<img src="images/slider/slider7.jpg" alt="" title="" />
+					</li>
+					<li>
+						<img src="images/slider/slider8.jpg" alt="" title="" />
+					</li>
+					<li>
+						<img src="images/slider/slider9.jpg" alt="" title="" />
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Judy Drap có 20 màu sắc khác nhau cho bạn lựa chọn. Tất cả đều trơn một màu.</p>
+			<p> 100% COTTON. KHÔNG RA MÀU KHÔNG PHAI CŨ </p>
+			<p>Ngoài ra Judy còn bán: Gối nằm 50x70, Gối ôm 1m và miếng lót bảo vệ nệm</p>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
